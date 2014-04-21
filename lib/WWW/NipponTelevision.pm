@@ -5,7 +5,25 @@ use warnings;
 
 our $VERSION = "0.01";
 
+sub new{
+ my($class,%opt) = @_;
+ my $self = {
+   apikey => $opt{apikey},
+ };
+ bless $self,$class;
+ return $self;
+}
 
+sub apikey{
+ my $self = shift;
+ return $self->{apikey};
+}
+
+sub response{
+ 
+
+
+}
 
 1;
 __END__
