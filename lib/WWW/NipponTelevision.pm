@@ -36,7 +36,7 @@ sub response{
     word => $word,
     period_start => 20140410,
     period_end =>  20140430,
- ); 
+ );
  my $ua = LWP::UserAgent->new();
  my $res = $ua->get($url);
  my $xml = $res->content;
@@ -45,6 +45,7 @@ sub response{
 }
 
 1;
+
 __END__
 
 =encoding utf-8
